@@ -2,16 +2,24 @@
 #-----import statements-----
 import turtle as trtl
 import random
+import leaderboard as lb
 #-----game configuration----
 trtlshape = "square"
 trtlcolor = "blue"
 trtlsize = 5
+
+
 score = 0
 
-timer = 5
+timer = 15
 counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 
+#scoreboard
+leaderboard_file_name = "leaderboard.txt"
+leader_names_list = []
+leader_scores_list = []
+player_name = input("Please enter your name.")
 
 #-----initialize turtle-----
 fig = trtl.Turtle(shape=trtlshape)
